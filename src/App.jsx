@@ -50,7 +50,9 @@ function App() {
                min={8}
                max={20}
                value={length}
-               onChange={(e)=>setlength(e.target.value)}
+               onChange={(e)=>{
+                 generatePassword();
+                 setlength(e.target.value)}}
                />
                <label className="text-white px-2.5" >lenght:{length}</label>
                </div>
